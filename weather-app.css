@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-color: #39b7a4;
+}
+svg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    height: 100dvh;
+    background-color: #5cdb95;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+}
+
+.weather p{
+    font-size: 2rem;
+}
+
+.weather > div{
+    margin: 0.625rem;
+}
+
+.weather1{
+    font-size: 4rem;
+}
+
+.weather span{
+    font-size: 0.75rem;
+}
+
+.weather3 span{
+    margin: 0.3rem;
+}
+
+.weather3 img {
+    width: 2rem;
+}
+
+nav{
+    border-radius: 100px 100px 0 0;
+    position: absolute;
+    height: 100px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.18);
+    bottom: 0%;
+    width: 100%;
+    background-color: rgba(229, 226, 226, 0.35);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+nav form {
+    width: 70%;
+    grid-template-columns: 5fr 1fr;
+    display: grid;
+}
+
+.searchField{
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    padding: 1rem 0;
+    width: 98%;
+    border-bottom: 2px solid rgb(107, 176, 98);
+}
+
+nav form button{
+    font-size: 0.75rem;
+    background-color: #5cdb95;
+    border: none;
+    outline: none;
+    border-radius: 0 50px 50px 0;
+    cursor: pointer;
+    color: white;
+    animation: border-radius-change  3s infinite alternate;
+}
+
+@keyframes border-radius-change {
+    0% {
+        border-radius:  0  50px  50px  0;
+    }
+    33% {
+        border-radius:  0  65px  50px  0;
+    }
+
+    66% {
+        border-radius:  0  50px  65px  0;
+    }
+    100% {
+        border-radius:  0  55px  45px  0;
+    }
+}
